@@ -38,15 +38,15 @@
         }
         .gold {
             background-color: gold;
-            padding-top: 60px;
+            padding-top: 60px; /* Tallest */
         }
         .silver {
             background-color: silver;
-            padding-top: 50px;
+            padding-top: 50px; /* Middle height */
         }
         .bronze {
             background-color: #cd7f32;
-            padding-top: 40px;
+            padding-top: 40px; /* Shortest */
         }
         .podium .leader h2, .podium .leader p {
             margin: 0;
@@ -69,15 +69,18 @@
         }
         @media screen and (max-width: 600px) {
             .podium {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+                flex-direction: row;
+                justify-content: space-between;
             }
-            .leader {
-                margin: 0;
+            .gold {
+                padding-top: 30px; /* Still the tallest */
             }
-            /* Adjustments for mobile to maintain the height differences */
-           
+            .silver {
+                padding-top: 25px; /* Middle */
+            }
+            .bronze {
+                padding-top: 20px; /* Shortest */
+            }
         }
     </style>
 </head>
