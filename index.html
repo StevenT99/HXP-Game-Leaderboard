@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podium Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .gif-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .podium {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .leader {
+            flex-basis: 30%;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .silver {
+            background-color: silver;
+        }
+        .bronze {
+            background-color: #cd7f32;
+        }
+        .podium .leader h2 {
+            margin-top: 0;
+            color: black; /* Ensures text is visible on gold, silver, bronze backgrounds */
+        }
+        .contenders {
+            margin-top: 20px;
+        }
+        .contenders table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .contenders th, .contenders td {
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .contenders th {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-header">
+        <img src="hungergamesgif.gif" alt="Hunger Games">
+    </div>
+    <div class="container">
+        <div class="podium">
+            <div class="leader gold">
+                <h2>1st Place</h2>
+                <p>Leader 1</p>
+                <p>Points: 100</p>
+            </div>
+            <div class="leader silver">
+                <h2>2nd Place</h2>
+                <p>Leader 2</p>
+                <p>Points: 90</p>
+            </div>
+            <div class="leader bronze">
+                <h2>3rd Place</h2>
+                <p>Leader 3</p>
+                <p>Points: 80</p>
+            </div>
+        </div>
+        <div class="contenders">
+            <h2>All Contenders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Contender 1</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>Contender 2</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>Contender 3</td>
+                        <td>60</td>
+                    </tr>
+                    <!-- Add more contenders as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
