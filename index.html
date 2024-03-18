@@ -23,7 +23,6 @@
         }
         .podium {
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: flex-end;
             margin-bottom: 20px;
@@ -31,26 +30,23 @@
         .leader {
             text-align: center;
             border-radius: 5px;
-            padding: 10px;
             margin: 0 10px;
+            flex: 1; /* Ensure equal width but allow overriding */
         }
         .gold {
             background-color: gold;
-            order: 2;
             padding-top: 60px; /* Tallest */
         }
         .silver {
             background-color: silver;
-            order: 1;
-            padding-top: 40px; /* Middle */
+            padding-top: 40px; /* Middle height */
         }
         .bronze {
             background-color: #cd7f32;
-            order: 3;
             padding-top: 20px; /* Shortest */
         }
-        .podium .leader h2 {
-            margin-top: 0;
+        .podium .leader h2, .podium .leader p {
+            margin: 5px 0; /* Tighter spacing */
             color: black;
         }
         .contenders {
@@ -68,22 +64,20 @@
         .contenders th {
             background-color: #333;
         }
-        @media screen and (max-width: 768px) {
-            .podium {
-                flex-direction: column;
-                align-items: center;
-            }
+        @media screen and (max-width: 600px) {
             .leader {
-                margin-bottom: 10px;
+                flex: 1 0 30%; /* Adjust for mobile to ensure they stay in a row */
+                padding-top: 10px; /* Reset starting padding */
             }
-            .gold, .silver, .bronze {
-                order: 0; /* Reset order for mobile */
-                padding-top: 20px; /* Equal height for simplicity */
+            .gold {
+                padding-top: 30px; /* Adjust heights for mobile */
             }
-            /* Custom adjustments for mobile to still differentiate heights */
-            .gold { padding-top: 30px; }
-            .silver { padding-top: 25px; }
-            .bronze { padding-top: 20px; }
+            .silver {
+                padding-top: 25px;
+            }
+            .bronze {
+                padding-top: 20px;
+            }
         }
     </style>
 </head>
