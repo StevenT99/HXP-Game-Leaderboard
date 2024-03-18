@@ -11,42 +11,45 @@
             padding: 0;
             background-color: black;
             color: white;
+            text-align: center;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
         }
-        .gif-header {
-            text-align: center;
+        .gif-header img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
             margin-bottom: 20px;
         }
         .podium {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: flex-end;
-            margin-bottom: 20px;
         }
         .leader {
             text-align: center;
             border-radius: 5px;
-            margin: 0 10px;
-            flex: 1; /* Ensure equal width but allow overriding */
+            padding: 10px;
+            margin: 0 5px;
+            flex: 1;
         }
         .gold {
             background-color: gold;
-            padding-top: 60px; /* Tallest */
+            padding-top: 60px;
         }
         .silver {
             background-color: silver;
-            padding-top: 40px; /* Middle height */
+            padding-top: 50px;
         }
         .bronze {
             background-color: #cd7f32;
-            padding-top: 20px; /* Shortest */
+            padding-top: 40px;
         }
         .podium .leader h2, .podium .leader p {
-            margin: 5px 0; /* Tighter spacing */
+            margin: 0;
             color: black;
         }
         .contenders {
@@ -65,19 +68,18 @@
             background-color: #333;
         }
         @media screen and (max-width: 600px) {
+            .podium {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
             .leader {
-                flex: 1 0 30%; /* Adjust for mobile to ensure they stay in a row */
-                padding-top: 10px; /* Reset starting padding */
+                margin: 0;
             }
-            .gold {
-                padding-top: 30px; /* Adjust heights for mobile */
-            }
-            .silver {
-                padding-top: 25px;
-            }
-            .bronze {
-                padding-top: 20px;
-            }
+            /* Adjustments for mobile to maintain the height differences */
+            .gold { padding-top: 30px; }
+            .silver { padding-top: 25px; }
+            .bronze { padding-top: 20px; }
         }
     </style>
 </head>
@@ -89,17 +91,17 @@
         <div class="podium">
             <div class="leader silver">
                 <h2>2nd Place</h2>
-                <p>Leader 2</p>
+                <p>Fiji Nadi</p>
                 <p>Points: 90</p>
             </div>
             <div class="leader gold">
                 <h2>1st Place</h2>
-                <p>Leader 1</p>
+                <p>Vanuatu</p>
                 <p>Points: 100</p>
             </div>
             <div class="leader bronze">
                 <h2>3rd Place</h2>
-                <p>Leader 3</p>
+                <p>Bolivia Amazon</p>
                 <p>Points: 80</p>
             </div>
         </div>
@@ -114,18 +116,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Contender 1</td>
+                        <td>Vanuatu</td>
                         <td>70</td>
                     </tr>
                     <tr>
-                        <td>Contender 2</td>
+                        <td>Fiji Nadi</td>
                         <td>65</td>
                     </tr>
                     <tr>
-                        <td>Contender 3</td>
+                        <td>Bolivia Amazon</td>
                         <td>60</td>
                     </tr>
-                    <!-- Add more contenders as needed -->
+                    <!-- More contenders can be added here -->
                 </tbody>
             </table>
         </div>
