@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podium Leaderboard</title>
+    <title>2024 THE GAME LEADERBOARD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,11 +18,15 @@
             margin: 20px auto;
             padding: 20px;
         }
+        .gif-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
         .gif-header img {
-            width: 100%;
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            display: inline-block;
+            margin-right: 10px;
         }
         .podium {
             display: flex;
@@ -64,6 +68,21 @@
         .contenders th {
             background-color: #333;
         }
+
+        /* Media Query for Mobile */
+        @media screen and (max-width: 600px) {
+            .gif-header img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+            .gif-header img:nth-child(2),
+            .gif-header img:nth-child(3) {
+                display: inline-block;
+                margin-right: 5px;
+                width: 50px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -74,18 +93,18 @@
         <div class="podium">
             <div class="leader gold">
                 <h2>1st Place</h2>
-                <p>Vanuatu</p>
-                <p>Points: 100</p>
+                <p>Peru Inca</p>
+                <p>Points: 10</p>
             </div>
             <div class="leader silver">
                 <h2>2nd Place</h2>
-                <p>Fiji Nadi</p>
-                <p>Points: 90</p>
+                <p>Peru Iquitos</p>
+                <p>Points: 10</p>
             </div>
             <div class="leader bronze">
                 <h2>3rd Place</h2>
-                <p>Bolivia Amazon</p>
-                <p>Points: 80</p>
+                <p>Samoa Apia</p>
+                <p>Points: 0</p>
             </div>
         </div>
         <div class="contenders">
@@ -99,17 +118,231 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Vanuatu</td>
-                        <td>100</td>
+                        <td>Peru Inca</td>
+                        <td>10</td>
                     </tr>
                     <tr>
-                        <td>Fiji Nadi</td>
-                        <td>90</td>
+                        <td>Peru Iquitos</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Samoa Apia</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Thailand Chiang Mai</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Uruguay</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Cambodia Angkor Wat</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Cambodia Siem Reap</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Costa Rica San Jose</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Ecuador Cotopaxi</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Malawi REFUGE</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Romania Transylvania</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Tonga Tapu</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Outer Banks</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Belize Orange Walk</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Mongolia</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Uganda</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Vanuatu</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Brazil Recife</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Colombia Del Flores</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Malawi Heart of Africa</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Malaysia LOVE</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Thailand Udon</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Bolivia Corazon</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Tonga Fua'amotu</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Zimbabwe</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Panama</td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr>
+                        <td>Belize Cayo</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Brazil Santarem</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Chile Patagonia</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>DR La Cienaga</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Guatemala Atitlan</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Guatemala Mayan</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Lone Star</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Argentina De Nieve</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>Bolivia Amazon</td>
-                        <td>80</td>
+                        <td>3</td>
                     </tr>
+                    <tr>
+                        <td>Costa Rica Pura Vida</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Ecuador Galapagos</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Kenya Masai Mara</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Mozambique Aventura</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Mozambique Kruger</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Philippines San Pablo</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Romania Bucharest</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Almost Heaven WV</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>Fiji Taveuni</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Indonesia Jakarta</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Japan TEACH</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Malaysia BUILD</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Nepal</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>DR Tamboril</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fiji Nadi</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Indonesia Bali</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Argentina Patagonia</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Samoa Upolu</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Ohana</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ohana</td>
+                        <td></td>
+                    </tr>
+    
+
                     <!-- Additional contenders can be listed here -->
                 </tbody>
             </table>
